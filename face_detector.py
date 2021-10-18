@@ -1,5 +1,4 @@
 import cv2
-from random import randrange
 
 # load some pre trained data on face frontals from opencv (haar cascade algorithm)
 
@@ -7,7 +6,7 @@ trained_face_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # choose an image to detect faces in (imread = image read)
 #img = cv2.imread('Robert_Downey_Jr..jpg')
-img = cv2.imread('twice.jpg') 
+img = cv2.imread('placeholder.jpg') 
 # MUST convert to grayscale (only 1 instead of 3 in rgb)
 grayscaled_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) # rgb is backwards in opencv
 
@@ -26,5 +25,5 @@ cv2.imshow("NibbaNaeNae's face detector", img)
 # waitkey waits until a key is pressed, closes win
 cv2.waitKey()
 
-print("Code completed")
+print("Terminated")
 
